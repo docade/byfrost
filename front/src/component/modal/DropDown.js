@@ -14,7 +14,7 @@ const items = [
     label: <div style={{ width: "100px" }}>2nd asadfnfjn item</div>,
   },
 ];
-const DropDown = ({ children, title }) => (
+const DropDown = ({ title }) => (
   <>
     <DropBox
       menu={{

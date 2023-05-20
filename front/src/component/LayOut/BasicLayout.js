@@ -45,7 +45,7 @@ const BasicLayout = ({ children }) => {
               style={{ width: "100%", height: "100%" }}
             />
           </DiscordIcon>
-          <DropDown title="title">안녕 하세요</DropDown>
+          <DropDown title="connect wallet">안녕 하세요</DropDown>
           {/* </SecondBox> */}
         </Header>
 
@@ -79,6 +79,7 @@ const headerStyle = {
   width: "100%",
   left: 0,
   right: 0,
+  zIndex: 100,
 };
 
 const contentStyle = {

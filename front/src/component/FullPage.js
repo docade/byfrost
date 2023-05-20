@@ -2,6 +2,8 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import { Content } from "antd/es/layout/layout";
 import { SectionsContainer, Section } from "react-fullpage";
 import FirstContainer from "./FirstContainerLayOut/FirstContainerLayOut";
+import SecondContainerLayOut from "./SecondContainer/SecondContainerLayOut";
+import { One, Two, Three, Four, Five, Six } from "../img/Index";
 
 let options = {
   activeClass: "active", // the class that is appended to the sections links
@@ -24,11 +26,11 @@ const Fullpage = ({ children }) => {
         <Section>
           <FirstContainer />
         </Section>
-        <Section>
-          <FirstContainer />
+        <Section style={style}>
+          <SecondContainerLayOut />
         </Section>
         <Section>
-          <div>3번째 박스</div>
+          <div>3번째 페이지</div>
         </Section>
       </SectionsContainer>
     </Content>
@@ -36,3 +38,9 @@ const Fullpage = ({ children }) => {
 };
 
 export default Fullpage;
+
+const style = {
+  display: "flex",
+  justifyContent: "center",
+  width: "100px",
+};
