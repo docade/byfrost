@@ -9,10 +9,14 @@ import {
 } from "@ant-design/icons";
 import DropDown from "../modal/DropDown";
 import Fullpage from "../FullPage";
+import { useNavigate } from "react-router-dom";
 
 const { Header, Footer, Sider, Content } = Layout;
 
 const BasicLayout = ({ children }) => {
+
+  const naviagte = useNavigate()
+
   return (
     <Space
       direction="vertical"
@@ -24,7 +28,7 @@ const BasicLayout = ({ children }) => {
       <Layout>
         <Header style={headerStyle}>
           <FirstBox>
-            <Logo>EGG BREAKER</Logo>
+            <Logo onClick={()=> naviagte("/")}>EGG BREAKER</Logo>
             <StyledMenu>
               {/* <StyledMenuItem1>
                 <RocketFilled />

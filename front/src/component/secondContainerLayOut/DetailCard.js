@@ -1,7 +1,7 @@
 import { Col, Divider, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import { styled } from "styled-components";
-import { One, Two, Three, Four, Five, Six } from "../../img/Index";
+import { One, Two, Three, Four, Five, Six, Qestion } from "../../img/Index";
 
 const Card = ({ picture, name, script, text }) => {
   const [data, setData] = useState(null);
@@ -19,6 +19,18 @@ const Card = ({ picture, name, script, text }) => {
             width: "377px",
             height: "324px",
             borderRadius: "20px",
+          }}
+        />
+        <img
+          src={Qestion}
+          alt="1"
+          style={{
+            position: "absolute",
+            top: 20,
+            left: 100,
+            width: "50%",
+            height: "50%",
+            zIndex: 2,
           }}
         />
       </div>
