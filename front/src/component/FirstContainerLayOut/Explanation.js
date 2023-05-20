@@ -19,10 +19,11 @@ const Explanation = () => {
 export default Explanation;
 
 const ExplanationBox = styled.div`
-  width: 468px;
+  width: 678px;
   height: 140px;
   padding: 44px;
   color: #ffffff;
+  z-index: 1;
 `;
 
 const Title = styled.div`

@@ -9,7 +9,8 @@ const VideoPlayer = () => {
         controls
         autoPlay
         muted
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        style={{ width: "150%", height: "100%", objectFit: "cover" }}
+        className="video2"
       />
     </div>
   );

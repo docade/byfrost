@@ -2,8 +2,9 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import { Content } from "antd/es/layout/layout";
 import { SectionsContainer, Section } from "react-fullpage";
 import FirstContainer from "./FirstContainerLayOut/FirstContainerLayOut";
-import SecondContainerLayOut from "./SecondContainer/SecondContainerLayOut";
+import ThirdContainerLayOut from "./ThirdContainer/ThirdContainerLayOut";
 import { One, Two, Three, Four, Five, Six } from "../img/Index";
+import SecondContainerLayOut from "./secondContainerLayOut/SecondContainerLayOut";
 
 let options = {
   activeClass: "active", // the class that is appended to the sections links
@@ -23,14 +24,17 @@ const Fullpage = ({ children }) => {
   return (
     <Content>
       <SectionsContainer {...options}>
-        <Section className="baba">
+        <Section>
           <FirstContainer />
         </Section>
         <Section>
           <SecondContainerLayOut />
         </Section>
         <Section>
-          <div>3번째 페이지</div>
+          <ThirdContainerLayOut />
+        </Section>
+        <Section>
+          <p>4번째 페이지 네이션</p>
         </Section>
       </SectionsContainer>
     </Content>
