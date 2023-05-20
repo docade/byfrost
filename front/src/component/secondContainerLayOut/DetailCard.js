@@ -7,7 +7,7 @@ const Card = ({ picture, name, script, text }) => {
   const [data, setData] = useState(null);
 
   return (
-    <StyledCol className="gutter-row" span={7}>
+    <StyledCol className="gutter-row">
       <div>
         <img
           src={picture}
@@ -37,8 +37,7 @@ export default Card;
 const StyledCol = styled(Col)`
   width: 377px;
   height: 496px;
-  height: 300px;
-  margin: 10px;
+
   transform: scale(1);
 `;
 

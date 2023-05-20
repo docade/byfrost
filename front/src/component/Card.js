@@ -36,12 +36,12 @@ const Card = ({ picture, name, script, text }) => {
 export default Card;
 
 const StyledCol = styled(Col)`
-  width: 176px;
-  // width: 376px;
-  // height: 496px;
+  // width: 176px;
+  width: 376px;
+  height: 496px;
   height: 300px;
   margin: 10px;
-  transform: scale(0.75);
+  // transform: scale(0.75);
 `;
 
 const ContextBox = styled.div`

@@ -20,6 +20,7 @@ const LayOut = styled.div`
   align-items: center;
   margin-top: 50px;
   flex-direction: row;
+  margin-bottom: 150px;
 `;
 
 const VideoBox = styled.div`

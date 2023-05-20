@@ -5,7 +5,7 @@ import PlayButton from "../pixelstreaming/PlayButton";
 
 const FourthContainerLayOut = () => {
   return (
-    <MainBox >
+    <MainBox>
       <ImageBox>
         <h2 className="test">PLAY YOUR NFT HERO</h2>
         <p>Let's take the road to love and Romantic together</p>
@@ -26,8 +26,7 @@ const MainBox = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
-
-  
+  margin-top: 200px;
 
   p {
     font-size: 20px;
@@ -46,8 +45,6 @@ const ImageBox = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
-
-  
 
   h2 {
     font-style: normal;

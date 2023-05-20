@@ -5,6 +5,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.1.0",
     "@chakra-ui/react": "^2.6.1",
+    "@fontsource/press-start-2p": "^4.5.11",
     "@fullpage/react-fullpage": "^0.1.39",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

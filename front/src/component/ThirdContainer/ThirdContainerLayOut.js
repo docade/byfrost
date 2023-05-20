@@ -7,7 +7,7 @@ import { One, Two, Three, Four, Five, Six } from "../../img/Index";
 const SecondContainerLayOut = () => {
   return (
     <MainBox>
-      <StyledRow className="CardRow" gutter={[0, 40]}>
+      <StyledRow className="CardRow" gutter={[0, 150]}>
         {dummy.map((data) => {
           return (
             <Card

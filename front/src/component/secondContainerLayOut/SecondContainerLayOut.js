@@ -4,6 +4,7 @@ import DetailText from "./DetailText";
 import DetailCard from "./DetailCard";
 import Card from "./DetailCard";
 import { Tree } from "../../img/Index";
+import "@fontsource/press-start-2p"; // Defaults to weight 400.
 
 const SecondContainerLayOut = () => {
   return (
@@ -36,6 +37,7 @@ const dummy = [
 const MainBox = styled.div`
   position: relative;
   top: -10px;
+  font-family: "Press Start 2P";
 
   h2 {
     text-align: center;

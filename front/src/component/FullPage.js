@@ -24,20 +24,20 @@ let options = {
 const Fullpage = ({ children }) => {
   return (
     <Content>
-      <SectionsContainer {...options}>
-        <Section>
+      {/* <SectionsContainer {...options}>
+        <Section> */}
           <FirstContainer />
-        </Section>
-        <Section>
+        {/* </Section>
+        <Section> */}
           <SecondContainerLayOut />
-        </Section>
-        <Section>
+        {/* </Section>
+        <Section> */}
           <ThirdContainerLayOut />
-        </Section>
-        <Section>
+        {/* </Section>
+        <Section> */}
           <FourthContainerLayOut />
-        </Section>
-      </SectionsContainer>
+        {/* </Section>
+      </SectionsContainer> */}
     </Content>
   );
 };
