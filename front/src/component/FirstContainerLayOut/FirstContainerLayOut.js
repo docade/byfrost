@@ -18,7 +18,7 @@ const LayOut = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  margin-top: 50px;
   flex-direction: row;
 `;
 

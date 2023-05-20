@@ -5,6 +5,10 @@ const SecondContainerLayOut = () => {
   return (
     <MainBox>
       <h2>choose your NFT Hero</h2>
+      <ContentLayOut>
+        <div>d</div>
+        <div>s</div>
+      </ContentLayOut>
     </MainBox>
   );
 };
@@ -27,4 +31,9 @@ const MainBox = styled.div`
     line-height: 50px;
     color: #ffffff;
   }
+`;
+
+const ContentLayOut = styled.div`
+  display: flex;
+  justify-content: between-around;
 `;

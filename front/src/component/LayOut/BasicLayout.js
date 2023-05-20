@@ -77,6 +77,7 @@ const headerStyle = {
   position: "fixed",
   top: 0,
   width: "100%",
+  marginBottom: "100px",
   left: 0,
   right: 0,
   zIndex: 100,
