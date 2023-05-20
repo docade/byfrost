@@ -22,7 +22,7 @@ function PlayButton() {
 
   const sendBFC = async () => {
 
-    const decValue = 100*10**18;
+    const decValue = 10*10**18;
 
     const params = [
       {
@@ -43,7 +43,7 @@ function PlayButton() {
       // The result varies by RPC method.
       // For example, this method returns a transaction hash hexadecimal string upon success.
       console.log(result)
-      window.open("http://localhost:3000/game","_blank")
+      window.open("http://localhost:80","_blank")
     })
     .catch((error) => {
       // If the request fails, the Promise rejects with an error.
