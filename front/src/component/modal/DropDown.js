@@ -42,10 +42,6 @@ const items = [
 
 // },[])
 
-const test = () => {
-  console.log("adsfaaa")
-}
-
 const DropDown = ({ title }) => (
   <>
     { !window.biport ?
@@ -62,7 +58,7 @@ const DropDown = ({ title }) => (
       width="300px"
     >
       <ConnectWalletButon>
-        <div>My NFT</div>
+        <div>Wallet Connet</div>
       </ConnectWalletButon>
     </DropBox>
     }

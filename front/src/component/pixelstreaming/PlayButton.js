@@ -9,7 +9,7 @@ function PlayButton() {
     window.biport.request({ method: 'eth_accounts' })
     .then((accounts) => {
       [account] = accounts
-      console.log(account)
+      //console.log(account)
     }).catch((error) => {
       if (error.code === 4001) {
         // EIP-1193 userRejectedRequest error
