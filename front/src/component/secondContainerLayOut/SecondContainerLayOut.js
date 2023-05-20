@@ -1,13 +1,22 @@
 import React from "react";
 import { styled } from "styled-components";
+import DetailText from "./DetailText";
+import DetailCard from "./DetailCard";
+import Card from "../Card";
+import { Tree } from "../../img/Index";
 
 const SecondContainerLayOut = () => {
   return (
     <MainBox>
       <h2>choose your NFT Hero</h2>
       <ContentLayOut>
-        <div>d</div>
-        <div>s</div>
+        <DetailText />
+        <StyleCard
+          picture={dummy[0].picture}
+          name={dummy[0].name}
+          script={dummy[0].script}
+          text={dummy[0].text}
+        />
       </ContentLayOut>
     </MainBox>
   );
@@ -15,16 +24,21 @@ const SecondContainerLayOut = () => {
 
 export default SecondContainerLayOut;
 
+const dummy = [
+  {
+    picture: Tree,
+    name: "ROCKY",
+    script: "?????",
+    text: "Prompt writing involves crafting clear and engaging prompts, while using images to create a visual representation of the idea or concept.",
+  },
+];
+
 const MainBox = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: column;
   position: relative;
   top: -10px;
 
   h2 {
+    text-align: center;
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
@@ -35,5 +49,13 @@ const MainBox = styled.div`
 
 const ContentLayOut = styled.div`
   display: flex;
-  justify-content: between-around;
+  height: 600px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+const StyleCard = styled(Card)`
+  width: 420px;
+  transform: scale(1.25);
 `;
