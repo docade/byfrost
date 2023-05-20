@@ -23,10 +23,10 @@ const Fullpage = ({ children }) => {
   return (
     <Content>
       <SectionsContainer {...options}>
-        <Section>
+        <Section className="baba">
           <FirstContainer />
         </Section>
-        <Section style={style}>
+        <Section>
           <SecondContainerLayOut />
         </Section>
         <Section>
@@ -39,8 +39,8 @@ const Fullpage = ({ children }) => {
 
 export default Fullpage;
 
-const style = {
-  display: "flex",
-  justifyContent: "center",
-  width: "100px",
-};
+// const style = {
+//   display: "flex",
+//   justifyContent: "center",
+//   width: "300px",
+// };

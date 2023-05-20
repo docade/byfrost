@@ -15,12 +15,15 @@ const Card = ({ picture }) => {
             top: 0,
             left: 0,
             width: "100%",
-            height: "295px",
+            // height: "295px",
+            height: "195px",
+            borderRadius: "22px",
           }}
         />
       </div>
       <ContextBox>
         <Title>ROCKY</Title>
+        <hr />
         <ContentText>He is a righteous fighter</ContentText>
         <ContentText2>
           muscular Italian-American who grew up in a poor neighborhood in
@@ -34,35 +37,31 @@ const Card = ({ picture }) => {
 export default Card;
 
 const StyledCol = styled(Col)`
-  width: 376px;
-  height: 496px;
+  width: 176px;
+  // width: 376px;
+  // height: 496px;
+  height: 300px;
   margin: 10px;
 `;
 
-const styles = {
-  width: "100%",
-  height: "276px",
-  color: "white",
-  backgroundColor: "white",
-};
-
 const ContextBox = styled.div`
   width: 100%;
-  height: 276px;
+  height: 195px;
   color: white;
+  padding: 20px;
 
   box-sizing: border-box;
 
   position: absolute;
 
-  height: 261px;
-  top: 270px;
+  // top: 270px;
+  top: 150px;
 
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) -20.36%, #8d358e 51.7%);
   backdrop-filter: blur(10px);
   /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 5px;
+  border-radius: 0px 0px 5px 5px;
 `;
 
 const Title = styled.div`
@@ -90,7 +89,7 @@ const ContentText = styled.div`
 
 const ContentText2 = styled.div`
   width: 100%;
-  height: 64px;
+  // height: 64px;
 
   font-family: "Inter";
   font-style: normal;

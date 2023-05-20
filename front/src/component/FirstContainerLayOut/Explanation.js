@@ -26,31 +26,31 @@ const ExplanationBox = styled.div`
 `;
 
 const Title = styled.div`
-  width: 468px;
-  height: 88px;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.2px;
   text-transform: capitalize;
 `;
 
 const Contents = styled.div`
-  width: 468px;
-  height: 140px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  /* or 175% */
+
+  display: flex;
   align-items: center;
   letter-spacing: 0.2px;
   text-transform: capitalize;
+
+  /* systemGrey/600 */
+
+  color: #757575;
 `;
 
 const Button = styled.button`

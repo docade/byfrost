@@ -46,7 +46,6 @@ const DropBox = styled(Dropdown)`
 
 const ConnectWalletButon = styled(Button)`
   color: white;
-
   width: 167px;
   height: 35px;
 

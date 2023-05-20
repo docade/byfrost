@@ -8,14 +8,14 @@ const SecondContainerLayOut = () => {
   return (
     <MainBox>
       <h2>choose your NFT Hero</h2>
-      <Row className="CardRow" gutter={[0, 20]}>
+      <StyledRow className="CardRow" gutter={[0, 40]}>
         <Card picture={One} />
         <Card picture={Two} />
         <Card picture={Three} />
         <Card picture={Four} />
         <Card picture={Five} />
         <Card picture={Six} />
-      </Row>
+      </StyledRow>
     </MainBox>
   );
 };
@@ -28,6 +28,8 @@ const MainBox = styled.div`
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  top: -10px;
 
   h2 {
     font-style: normal;
@@ -39,6 +41,5 @@ const MainBox = styled.div`
 `;
 
 const StyledRow = styled(Row)`
-  display: flex
-  justify-content: center;
+  width: 1040px;
 `;

@@ -1,12 +1,12 @@
 import React from "react";
 import { styled } from "styled-components";
-import Video from "./Video";
+import VideoLayOut from "./VideoLayOut";
 import Explanation from "./Explanation";
 
 const FirstContainer = () => {
   return (
     <LayOut>
-      <Video />
+      <VideoLayOut>ss</VideoLayOut>
       <Explanation />
     </LayOut>
   );
@@ -17,4 +17,12 @@ export default FirstContainer;
 const LayOut = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
+
+  flex-direction: row;
+`;
+
+const VideoBox = styled.div`
+  width: 240px;
+  height: 370px;
 `;
