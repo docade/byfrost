@@ -1,11 +1,14 @@
 import { WsV2 } from "chainrunner-sdk";
 import BigNumber from "bignumber.js";
 import { useEffect } from 'react';
+import { mint } from './NFTminting'
+//import { Minting } from './NFTminting copy'
 
 function Chainrunner() {
 
 
-    const apiKey = "6589cb40-2133-4585-be6a-39fbb7439d6d" // 발급 받은 API Key
+    //const apiKey = "6589cb40-2133-4585-be6a-39fbb7439d6d" // 발급 받은 API Key
+    const apiKey = process.env.REACT_APP_API_KEY;
     const client = new WsV2(
       "wss://api.glitch.chainrunner.io",
       window.biport,
@@ -32,6 +35,7 @@ function Chainrunner() {
       );
       
       console.log(response.result);
+      await mint()
     }
   
     // buyApi();
