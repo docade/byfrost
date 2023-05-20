@@ -5,6 +5,7 @@ import FirstContainer from "./FirstContainerLayOut/FirstContainerLayOut";
 import ThirdContainerLayOut from "./ThirdContainer/ThirdContainerLayOut";
 import { One, Two, Three, Four, Five, Six } from "../img/Index";
 import SecondContainerLayOut from "./secondContainerLayOut/SecondContainerLayOut";
+import FourthContainerLayOut from "./FourthContainer/FourthContainerLayOut";
 
 let options = {
   activeClass: "active", // the class that is appended to the sections links
@@ -34,7 +35,7 @@ const Fullpage = ({ children }) => {
           <ThirdContainerLayOut />
         </Section>
         <Section>
-          <p>4번째 페이지 네이션</p>
+          <FourthContainerLayOut />
         </Section>
       </SectionsContainer>
     </Content>
