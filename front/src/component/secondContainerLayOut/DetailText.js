@@ -2,10 +2,9 @@ import React from "react";
 import { WsV2 } from "chainrunner-sdk";
 import BigNumber from "bignumber.js";
 import { styled } from "styled-components";
-import { mint } from "../wallet/NFTminting"; 
+import { mint } from "../wallet/NFTminting";
 
 const DetailText = () => {
-
   const apiKey = process.env.REACT_APP_API_KEY;
   const client = new WsV2(
     "wss://api.glitch.chainrunner.io",
@@ -71,10 +70,9 @@ const DetailText = () => {
     bridgeAndBuyApi();
   };
 
-
-  const test = async() => {
-    await checkAndBridge()
-  }
+  const test = async () => {
+    await checkAndBridge();
+  };
 
   return (
     <DetailTextBox>
@@ -94,6 +92,7 @@ const DetailText = () => {
 export default DetailText;
 
 const DetailTextBox = styled.div`
+  margin-top: 300px;
   width: 429px;
   height: 312px;
 `;
@@ -131,6 +130,8 @@ const Content = styled.div`
   align-items: center;
   letter-spacing: 0.2px;
   text-transform: capitalize;
+
+  margin-bottom: 20px;
 
   /* systemGrey/600 */
 

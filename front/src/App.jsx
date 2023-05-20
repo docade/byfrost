@@ -6,6 +6,7 @@ import BasicLayout from "./component/LayOut/BasicLayout";
 import Test from "./page/Test";
 //import Chainrunner from "./component/wallet/Chainrunner";
 import PlayButton from "./component/pixelstreaming/PlayButton";
+import BackSer from "./page/BackSer";
 // import Minting from "./component/wallet/NFTminting";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <BasicLayout>
       <Routes>
         <Route path="/" element={<MainPage />}></Route>
+        <Route path="/backser" element={<BackSer />}></Route>
         <Route path="/test" element={<Test />}></Route>
         {/* <Route path="/chainrunner" element={<Chainrunner />}></Route> */}
         <Route path="/game" element={<PlayButton />}></Route>

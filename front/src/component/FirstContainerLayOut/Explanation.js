@@ -1,7 +1,10 @@
 import React from "react";
 import { styled } from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Explanation = () => {
+  const navigate = useNavigate();
+
   return (
     <ExplanationBox>
       <Title>The First AI-Powered Web3 Operating System </Title>
@@ -11,7 +14,7 @@ const Explanation = () => {
         permissionless on-chain products through natural language. Very soon,
         Lucy will onboard the next hundred million users into the crypto world.
       </Contents>
-      <Button>Get Start</Button>
+      <Button onClick={() => navigate("/backser")}>Get White Paper</Button>
     </ExplanationBox>
   );
 };

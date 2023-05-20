@@ -26,7 +26,7 @@ const BasicLayout = ({ children }) => {
           <FirstBox>
             <Logo>EGG BREAKER</Logo>
             <StyledMenu>
-              <StyledMenuItem1>
+              {/* <StyledMenuItem1>
                 <RocketFilled />
               </StyledMenuItem1>
               <StyledMenuItem2>
@@ -34,23 +34,22 @@ const BasicLayout = ({ children }) => {
               </StyledMenuItem2>
               <StyledMenuItem3>
                 <RobotFilled />
-              </StyledMenuItem3>
+              </StyledMenuItem3> */}
             </StyledMenu>
           </FirstBox>
-          {/* <SecondBox> */}
-          <DiscordIcon>
-            <img
-              src={discord}
-              alt="discord"
-              style={{ width: "100%", height: "100%" }}
-            />
-          </DiscordIcon>
-          <DropDown title="connect wallet">안녕 하세요</DropDown>
-          {/* </SecondBox> */}
+          <SecondBox>
+            <DiscordIcon>
+              <img
+                src={discord}
+                alt="discord"
+                style={{ width: "50px", height: "100%" }}
+              />
+            </DiscordIcon>
+            <DropDown title="connect wallet">안녕 하세요</DropDown>
+          </SecondBox>
         </Header>
 
         <Content style={contentStyle}>{children}</Content>
-        <Footer style={footerStyle}>Footer</Footer>
       </Layout>
     </Space>
   );
@@ -147,7 +146,8 @@ const FirstBox = styled.div`
 
 const SecondBox = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  justify-content: space-between;
   align-items: center;
   width: 200px;
   height: 100%;
@@ -170,4 +170,21 @@ const ConnectWalletButon = styled(Button)`
     rgba(237, 98, 223, 0) 100%
   );
   border-radius: 5px;
+`;
+
+const GameButton = styled.div`
+  color: white;
+
+  width: 167px;
+  height: 35px;
+
+  background: linear-gradient(
+    180deg,
+    #efaa9e 0%,
+    rgba(250, 14, 226, 0.697917) 30.21%,
+    rgba(242, 12, 219, 0.75) 79.17%,
+    rgba(237, 98, 223, 0) 100%
+  );
+  border-radius: 5px;
+  text-align: -10px 9px;
 `;

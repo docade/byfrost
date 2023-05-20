@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 import DetailText from "./DetailText";
 import DetailCard from "./DetailCard";
-import Card from "../Card";
+import Card from "./DetailCard";
 import { Tree } from "../../img/Index";
 
 const SecondContainerLayOut = () => {
@@ -51,7 +51,9 @@ const ContentLayOut = styled.div`
   display: flex;
   height: 600px;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
+  //   justify-content: space-around;
   align-items: center;
 `;
 

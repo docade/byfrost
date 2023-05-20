@@ -61,7 +61,7 @@ const ContextBox = styled.div`
   backdrop-filter: blur(10px);
   /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 10px 10px;
 `;
 
 const Title = styled.div`
