@@ -1,28 +1,42 @@
 import { Button, Layout, Menu, Space } from "antd";
 import styled from "styled-components";
 import discord from "../../img/discord.png";
+import {
+  CrownFilled,
+  GitlabFilled,
+  RobotFilled,
+  RocketFilled,
+} from "@ant-design/icons";
+import DropDown from "../modal/DropDown";
 
 const { Header, Footer, Sider, Content } = Layout;
 
-const BasicLayout = ({ children }) => (
-  <Space
-    direction="vertical"
-    style={{
-      width: "100%",
-    }}
-    size={[0, 48]}
-  >
-    <Layout>
-      <Header style={headerStyle}>
-        <FirstBox>
-          <Logo>EGG BREAKER</Logo>
-          <StyledMenu>
-            <StyledMenuItem1></StyledMenuItem1>
-            <StyledMenuItem2></StyledMenuItem2>
-            <StyledMenuItem3></StyledMenuItem3>
-          </StyledMenu>
-        </FirstBox>
-        <SecondBox>
+const BasicLayout = ({ children }) => {
+  return (
+    <Space
+      direction="vertical"
+      style={{
+        width: "100%",
+      }}
+      size={[0, 48]}
+    >
+      <Layout>
+        <Header style={headerStyle}>
+          <FirstBox>
+            <Logo>EGG BREAKER</Logo>
+            <StyledMenu>
+              <StyledMenuItem1>
+                <RocketFilled />
+              </StyledMenuItem1>
+              <StyledMenuItem2>
+                <CrownFilled />
+              </StyledMenuItem2>
+              <StyledMenuItem3>
+                <RobotFilled />
+              </StyledMenuItem3>
+            </StyledMenu>
+          </FirstBox>
+          {/* <SecondBox> */}
           <DiscordIcon>
             <img
               src={discord}
@@ -30,14 +44,18 @@ const BasicLayout = ({ children }) => (
               style={{ width: "100%", height: "100%" }}
             />
           </DiscordIcon>
-          <ConnectWalletButon>ConnectWallet</ConnectWalletButon>
-        </SecondBox>
-      </Header>
-      <Content style={contentStyle}>{children}</Content>
-      <Footer style={footerStyle}>Footer</Footer>
-    </Layout>
-  </Space>
-);
+          <DropDown title="title">안녕 하세요</DropDown>
+          {/* </SecondBox> */}
+        </Header>
+        <Content style={contentStyle}>{children}</Content>
+        <Content style={contentStyle}>{children}</Content>
+        <Content style={contentStyle}>{children}</Content>
+        <Content style={contentStyle}>{children}</Content>
+        <Footer style={footerStyle}>Footer</Footer>
+      </Layout>
+    </Space>
+  );
+};
 export default BasicLayout;
 
 const Logo = styled.div`
@@ -56,10 +74,16 @@ const headerStyle = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
+  transition: "top 0.2s ease-in-out",
+  position: "fixed",
+  top: 0,
+  width: "100%",
+  left: 0,
+  right: 0,
 };
 
 const contentStyle = {
-  padding: "20px 50px",
+  padding: "100px 50px",
   minHeight: 120,
   color: "#fff",
   backgroundColor: "black",
@@ -74,7 +98,7 @@ const footerStyle = {
 const StyledMenu = styled(Menu)`
   display: flex;
   flex-direction: row;
-  item-align: center;
+  align-items: center;
   justify-content: center;
   text-align: center;
   background-color: #000000;
@@ -117,6 +141,7 @@ const StyledMenuItem3 = styled(Menu.Item)`
 
 const FirstBox = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 const SecondBox = styled.div`
@@ -125,10 +150,11 @@ const SecondBox = styled.div`
   align-items: center;
   width: 200px;
   height: 100%;
-  border: 1px solid red;
 `;
 
-const DiscordIcon = styled.div``;
+const DiscordIcon = styled.div`
+  width: 36px;
+`;
 
 const ConnectWalletButon = styled(Button)`
   color: white;

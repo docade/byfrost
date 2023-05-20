@@ -3,12 +3,16 @@ import { Routes, Route } from "react-router-dom";
 import MainPage from "./page/MainPage";
 import "antd/dist/reset.css";
 import BasicLayout from "./component/LayOut/BasicLayout";
+import Test from "./page/Test";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<MainPage />}></Route>
-    </Routes>
+    <BasicLayout>
+      <Routes>
+        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/test" element={<Test />}></Route>
+      </Routes>
+    </BasicLayout>
   );
 }
 
