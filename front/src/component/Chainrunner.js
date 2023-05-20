@@ -13,82 +13,6 @@ function Chainrunner() {
       apiKey
     );
   
-    const callApi = async () => {
-      const response = await client.call(
-        // "Glitch.view.info.DEXs",
-        // "Glitch.view.info.bridges",
-        "Glitch.view.info.assets",
-        undefined,
-        // new BigNumber(0xbfc) //main bfc
-        // new BigNumber(0xbfc0) //test bf
-        new BigNumber(0x61) //bnb test
-      );
-      console.log(JSON.stringify(response.result, undefined, 2));
-    }
-  
-    // callApi();
-  
-    const sellApi = async () => {
-      const response = await client.call(
-        "Glitch.run.sell",
-        undefined,
-        "bifswap",
-        [
-          "0x0000000000000000000000000000000000000000",
-          "0x1745F24d85192545E5eD1c9574782d067D3Fda09",
-          "0x28661511CDA7119B2185c647F23106a637CC074f",
-        ],
-        BigNumber(100),
-        BigNumber(6.11031100000000),
-        BigNumber(0xbfc0),
-        BigNumber(0.5),
-      );
-  
-      console.log(response.result);
-    }
-  
-  
-    const predictAPi = async () => {
-  
-      // const response = await client.call(
-      //   "Glitch.predict.sell",
-      //   undefined,
-      //   "0x0000000000000000000000000000000000000000",
-      //   "0x28661511CDA7119B2185c647F23106a637CC074f",
-      //   BigNumber(245.50458063732856),
-      //   BigNumber(0xbfc0),
-      // );
-  
-      // // console.log(response.result);
-      // console.log(response.result.predictions[0].amountDst);
-  
-    //   const response = await client.call(
-    //     "Glitch.predict.bridgeAndSell",
-    //     undefined,
-    //     "0x0000000000000000000000000000000000000000",
-    //     "0x0000000000000000000000000000000000000000",
-    //     BigNumber(0.1),
-    //     BigNumber(0x61),
-    //     BigNumber(0xbfc0),
-    //   );
-      
-    //   console.log(response.result);
-  
-    const response = await client.call(
-      "Glitch.predict.buy",
-      undefined,
-      "0x0000000000000000000000000000000000000000",
-      "0x28661511CDA7119B2185c647F23106a637CC074f",
-      BigNumber(10),
-      BigNumber(0xbfc0),
-    );
-  
-    console.log(response.result);
-  
-    }
-  
-    // predictAPi();
-  
     
     const buyApi = async ()=>{
       
@@ -111,24 +35,7 @@ function Chainrunner() {
     }
   
     // buyApi();
-  
-    const getBuy = async ()=>{
-      const response = await client.call(
-        "Glitch.view.DEX.sellResultAmount", //sell amount 하면 sell의 결과 14.81 BFC가 나오고 buy amount는 buy의 결과 0.905 usdc가 나옴
-        undefined,
-        "bifswap",
-        [
-          "0x28661511CDA7119B2185c647F23106a637CC074f", //usdc
-          "0x1745F24d85192545E5eD1c9574782d067D3Fda09",
-          "0x0000000000000000000000000000000000000000",
-        ], // path
-        BigNumber(0xbfc0),
-        "0xef6537adb8a76966ca8a6ce4dff27f9520c0270301cef73422589a4bd0cf0251",
-      );
-      
-      console.log(response.result);
-    }
-    // getBuy()
+
   
   const bridgeApi = async () => {
     
@@ -168,7 +75,6 @@ function Chainrunner() {
   
   
     useEffect(() => {
-      console.log("render")
       // checkAndBridge();
     },[])
   
