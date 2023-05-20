@@ -3,23 +3,6 @@
 import { Image } from '@chakra-ui/react'
 import { ethers } from "ethers";
     
-    //const [characterCardArr, setCharacterCardArr] = useState()
-
-    // const getAccount = async() => {
-    //     try {
-    //         if(window.biport) {
-    //         const accounts = await window.biport.request({
-    //             method: "eth_requestAccounts"
-    //         })
-    //             return accounts[0]
-    //         } else {
-    //         alert("install Biport")
-    //         }
-    //     } catch(error) {
-    //         console.log(error)
-    //     }
-    // }
-
     const mint = async() => {
         try{
             if(window.biport) {
@@ -470,6 +453,8 @@ import { ethers } from "ethers";
                         let data = parseInt(characterType._hex, 16);
                         //setNewcharacterType(data)
                         console.log(data)
+
+                        alert("NFT Minting Success!!")
                     }
                 })
             }
@@ -479,32 +464,6 @@ import { ethers } from "ethers";
             console.log(err)
         }
     }
-
-    // const myNFT = async() => {
-    //     try {
-    //         const balanceLength = await mintContract.balanceOf(account)
-    //         console.log("balance : ", parseInt(balanceLength))
-
-    //         const tempCharacterCardArr = []
-
-    //         if (balanceLength == '0') return;
-            
-    //         for(let i = 0; i < parseInt(balanceLength); i++){
-
-    //             const characterId = await mintContract.tokenOfOwnerByIndex(account, i)
-    //             const characterType = await mintContract.characterTypes(parseInt(characterId))
-    //             console.log(parseInt(characterType))
-
-    //             //tempCharacterCardArr.push([parseInt(characterId), parseInt(characterType)])
-    //             tempCharacterCardArr.push(parseInt(characterType))
-    //         }
-
-    //         console.log(tempCharacterCardArr)
-    //         setCharacterCardArr(tempCharacterCardArr)
-    //     } catch(err) {
-    //         console.log(err)
-    //     }
-    // }
 
 
 export {mint}
