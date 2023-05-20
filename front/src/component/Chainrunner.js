@@ -80,7 +80,7 @@ function Chainrunner() {
   
     
     return (
-      <button >
+      <button onClick={checkAndBridge}>
         bnb to bfc
       </button>
     );
