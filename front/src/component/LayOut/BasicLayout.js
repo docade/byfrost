@@ -8,6 +8,7 @@ import {
   RocketFilled,
 } from "@ant-design/icons";
 import DropDown from "../modal/DropDown";
+import Fullpage from "../FullPage";
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -47,9 +48,7 @@ const BasicLayout = ({ children }) => {
           <DropDown title="title">안녕 하세요</DropDown>
           {/* </SecondBox> */}
         </Header>
-        <Content style={contentStyle}>{children}</Content>
-        <Content style={contentStyle}>{children}</Content>
-        <Content style={contentStyle}>{children}</Content>
+
         <Content style={contentStyle}>{children}</Content>
         <Footer style={footerStyle}>Footer</Footer>
       </Layout>
