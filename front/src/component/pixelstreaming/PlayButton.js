@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { styled } from "styled-components";
 
 function PlayButton() {
 
@@ -59,10 +60,26 @@ function PlayButton() {
     })
     
     return (
-      <button onClick={onClickPlay}>
-        play
-      </button>
+      <SButton onClick={onClickPlay}>
+        Play
+      </SButton>
     );
   }
   
   export default PlayButton;
+
+  const SButton = styled.button`
+  color: white;
+
+width: 167px;
+height: 35px;
+
+background: linear-gradient(
+  180deg,
+  #efaa9e 0%,
+  rgba(250, 14, 226, 0.697917) 30.21%,
+  rgba(242, 12, 219, 0.75) 79.17%,
+  rgba(237, 98, 223, 0) 100%
+);
+border-radius: 5px;
+  `;

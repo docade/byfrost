@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import { Background } from "../../img/Index";
+import PlayButton from "../pixelstreaming/PlayButton";
 
 const FourthContainerLayOut = () => {
   return (
@@ -8,7 +9,7 @@ const FourthContainerLayOut = () => {
       <ImageBox>
         <h2 className="test">PLAY YOUR NFT HERO</h2>
         <p>Let's take the road to love and Romantic together</p>
-        <SButton>Play</SButton>
+        <PlayButton />
       </ImageBox>
     </MainBox>
   );
@@ -56,19 +57,3 @@ const ImageBox = styled.div`
     color: #ffffff;
   }
 `;
-
-const SButton = styled.button`
-  color: white;
-
-width: 167px;
-height: 35px;
-
-background: linear-gradient(
-  180deg,
-  #efaa9e 0%,
-  rgba(250, 14, 226, 0.697917) 30.21%,
-  rgba(242, 12, 219, 0.75) 79.17%,
-  rgba(237, 98, 223, 0) 100%
-);
-border-radius: 5px;
-  `;
