@@ -1,9 +1,11 @@
 import { Col, Divider, Row } from "antd";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { styled } from "styled-components";
 import { One, Two, Three, Four, Five, Six } from "../img/Index";
 
-const Card = ({ picture }) => {
+const Card = ({ picture, name, script, text }) => {
+  const [data, setData] = useState(null);
+
   return (
     <StyledCol className="gutter-row" span={7}>
       <div>
@@ -14,7 +16,7 @@ const Card = ({ picture }) => {
             position: "absolute",
             top: 0,
             left: 0,
-            width: "100%",
+            width: "300px",
             // height: "295px",
             height: "195px",
             borderRadius: "22px",
@@ -22,13 +24,10 @@ const Card = ({ picture }) => {
         />
       </div>
       <ContextBox>
-        <Title>ROCKY</Title>
+        <Title>{name ? name : ""}</Title>
         <hr />
-        <ContentText>He is a righteous fighter</ContentText>
-        <ContentText2>
-          muscular Italian-American who grew up in a poor neighborhood in
-          Philadelphia. He harbored dreams of becoming a boxer...
-        </ContentText2>
+        <ContentText>{script ? script : ""}</ContentText>
+        <ContentText2>{text ? text : ""}</ContentText2>
       </ContextBox>
     </StyledCol>
   );
@@ -42,11 +41,12 @@ const StyledCol = styled(Col)`
   // height: 496px;
   height: 300px;
   margin: 10px;
+  transform: scale(0.75);
 `;
 
 const ContextBox = styled.div`
-  width: 100%;
-  height: 195px;
+  width: 300px;
+  height: 300px;
   color: white;
   padding: 20px;
 
