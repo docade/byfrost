@@ -18,7 +18,7 @@ const FourthContainerLayOut = () => {
 export default FourthContainerLayOut;
 
 const MainBox = styled.div`
-  height: 100%;
+  height: 800px;
   display: flex;
   justify-content: center;
   vertical-align: middle;
