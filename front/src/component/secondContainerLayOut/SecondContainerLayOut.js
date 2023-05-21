@@ -27,7 +27,7 @@ export default SecondContainerLayOut;
 const dummy = [
   {
     picture: Tree,
-    name: "ROCKY",
+    name: "UNIQUE",
     script: "?????",
     text: "Prompt writing involves crafting clear and engaging prompts, while using images to create a visual representation of the idea or concept.",
   },
