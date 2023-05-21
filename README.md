@@ -6,6 +6,9 @@
 <img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/figma.svg" alt="Figma 로고" style="width: 200px; height: 200px;">
 <div>
 
+사용했던 Stack
+React, Nodejs, Figma
+
 프로젝트명: NFT 게임 감동 프로젝트
 
 우리는 NFT 코인을 활용하여 레트로한 감성을 가진 게임과 감동을 전달하는 프로젝트를 시작했습니다. 이 프로젝트는 블록체인 기술과 NFT의 고유성을 결합하여 레트로한 게임 경험을 새롭게 제공하고자 합니다.
