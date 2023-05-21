@@ -22,7 +22,7 @@ const Explanation = () => {
 export default Explanation;
 
 const ExplanationBox = styled.div`
-  width: 678px;
+  width: 658px;
   height: 140px;
   padding: 44px;
   color: #ffffff;
@@ -33,7 +33,7 @@ const Title = styled.div`
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 39px;
   line-height: 44px;
   letter-spacing: 0.2px;
   text-transform: capitalize;

@@ -3,8 +3,7 @@ import { styled } from "styled-components";
 import DetailText from "./DetailText";
 import DetailCard from "./DetailCard";
 import Card from "./DetailCard";
-import { Tree } from "../../img/Index";
-import "@fontsource/press-start-2p"; // Defaults to weight 400.
+import { Tree, Qestion } from "../../img/Index";
 
 const SecondContainerLayOut = () => {
   return (

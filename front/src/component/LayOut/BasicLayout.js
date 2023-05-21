@@ -14,8 +14,7 @@ import { useNavigate } from "react-router-dom";
 const { Header, Footer, Sider, Content } = Layout;
 
 const BasicLayout = ({ children }) => {
-
-  const naviagte = useNavigate()
+  const naviagte = useNavigate();
 
   return (
     <Space
@@ -28,7 +27,7 @@ const BasicLayout = ({ children }) => {
       <Layout>
         <Header style={headerStyle}>
           <FirstBox>
-            <Logo onClick={()=> naviagte("/")}>EGG BREAKER</Logo>
+            <Logo onClick={() => naviagte("/")}>EGG BREAKER</Logo>
             <StyledMenu>
               {/* <StyledMenuItem1>
                 <RocketFilled />
@@ -67,6 +66,7 @@ const Logo = styled.div`
   font-size: 20px;
   text-align: center;
   color: #ff00e6;
+  font-family: "Press Start 2P";
 `;
 
 const headerStyle = {

@@ -7,6 +7,8 @@ import Test from "./page/Test";
 //import Chainrunner from "./component/wallet/Chainrunner";
 import PlayButton from "./component/pixelstreaming/PlayButton";
 import BackSer from "./page/BackSer";
+import "@fontsource/press-start-2p"; // Defaults to weight 400.
+
 // import Minting from "./component/wallet/NFTminting";
 
 function App() {
