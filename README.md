@@ -1,5 +1,9 @@
 # byfrost
 
+<img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/react.svg" alt="React 로고" style="width: 100px; height: 100px;">
+<img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/nodejs-icon.svg" alt="Node.js 로고" style="width: 200px; height: 200px;">
+<img src="https://www.figma.com/images/brand/figma-logo.svg" alt="Figma 로고">
+
 ![React 로고](https://raw.githubusercontent.com/gilbarbara/logos/master/logos/react.svg)
 ![Node.js 로고](https://raw.githubusercontent.com/gilbarbara/logos/master/logos/nodejs-icon.svg)
 ![Figma 로고](https://raw.githubusercontent.com/gilbarbara/logos/master/logos/figma.svg)
