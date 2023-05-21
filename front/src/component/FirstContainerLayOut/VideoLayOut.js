@@ -13,8 +13,8 @@ const VideoLayOut = () => {
 export default VideoLayOut;
 
 const VedioBox = styled.div`
+
   width: 662px;
   height: 440px;
   background-color: black;
-  // margin-top: 200px;
 `;

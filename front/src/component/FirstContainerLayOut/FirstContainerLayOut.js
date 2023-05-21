@@ -17,13 +17,9 @@ export default FirstContainer;
 const LayOut = styled.div`
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 50px;
   flex-direction: row;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 `;
 
-const VideoBox = styled.div`
-  width: 240px;
-  height: 370px;
-`;

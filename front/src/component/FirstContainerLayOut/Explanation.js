@@ -7,7 +7,7 @@ const Explanation = () => {
 
   return (
     <ExplanationBox>
-      <Title> Break the egg </Title>
+      <Title style={{marginBottom:"10px"}}> Break the egg </Title>
       <Contents>
       Break the limit of your NFTs. You can rebirth your own NFTs to AI-powered heroes. You can fight against other heroes from multi-blockchain universe.
         Enhance your hero and get amazing rewards!
@@ -25,6 +25,7 @@ const ExplanationBox = styled.div`
   padding: 44px;
   color: #ffffff;
   z-index: 1;
+  margin-top: 100px;
 `;
 
 const Title = styled.div`
