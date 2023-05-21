@@ -6,8 +6,8 @@
 <img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/figma.svg" alt="Figma 로고" style="width: 200px; height: 200px;">
 <div>
 
-사용했던 Stack
-React, Nodejs, Figma
+<h2>사용했던 Stack</h2> <br/>
+<h1>React, Nodejs, Figma</h1>
 
 프로젝트명: NFT 게임 감동 프로젝트
 
