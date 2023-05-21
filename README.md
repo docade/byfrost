@@ -3,7 +3,7 @@
 <div style="display: flex; gap:20px">
 <img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/react.svg" alt="React 로고" style="width: 200px; height: 200px;">
 <img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/nodejs-icon.svg" alt="Node.js 로고" style="width: 200px; height: 200px;">
-<img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/figma.svg" alt="Figma 로고">
+<img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/figma.svg" alt="Figma 로고" style="width: 200px; height: 200px;">
 <div>
 
 프로젝트명: NFT 게임 감동 프로젝트
