@@ -7,12 +7,10 @@ const Explanation = () => {
 
   return (
     <ExplanationBox>
-      <Title>The First AI-Powered Web3 Operating System </Title>
+      <Title> Break the egg </Title>
       <Contents>
-        As the first AI-Powered Web3 Operating System, Lucy can answer your
-        questions about the crypto world and help you utilize all kinds of
-        permissionless on-chain products through natural language. Very soon,
-        Lucy will onboard the next hundred million users into the crypto world.
+      Break the limit of your NFTs. You can rebirth your own NFTs to AI-powered heroes. You can fight against other heroes from multi-blockchain universe.
+        Enhance your hero and get amazing rewards!
       </Contents>
       <Button onClick={() => navigate("/backser")}>Get White Paper</Button>
     </ExplanationBox>

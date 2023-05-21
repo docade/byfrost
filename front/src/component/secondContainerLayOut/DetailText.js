@@ -76,11 +76,11 @@ const DetailText = () => {
 
   return (
     <DetailTextBox>
-      <Title>Purus id tellus arcu habitant proin magna. Integer purus</Title>
+      <Title>Meet a random hero or invite your NFT character to be hero.  </Title>
 
       <Content>
-        Facilisi viverra dictum augue eu lobortis elit. In et donec habitasse
-        lacus mi commodo elementum.
+        If you don't have your own NFT, get our nfts living on bifrost chain. You can directly mint 
+        NFT with variable tokens on multichains without exchanging them through DEXs or CEXs beforehand.
       </Content>
       <ButtonMinting onClick={checkAndBridge}>
         <p>Minting</p>
@@ -92,8 +92,8 @@ const DetailText = () => {
 export default DetailText;
 
 const DetailTextBox = styled.div`
-  margin-top: 300px;
-  width: 429px;
+  margin-top: 50px;
+  width: 422px;
   height: 312px;
 `;
 
