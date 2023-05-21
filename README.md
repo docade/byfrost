@@ -1,8 +1,13 @@
 # byfrost
 
-![React 로고](https://raw.githubusercontent.com/gilbarbara/logos/master/logos/react.svg)
-![Node.js 로고](https://raw.githubusercontent.com/gilbarbara/logos/master/logos/nodejs-icon.svg)
-![Figma 로고](https://raw.githubusercontent.com/gilbarbara/logos/master/logos/figma.svg)
+<div style="display: flex; gap:20px">
+<img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/react.svg" alt="React 로고" style="width: 200px; height: 200px;">
+<img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/nodejs-icon.svg" alt="Node.js 로고" style="width: 200px; height: 200px;">
+<img src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/figma.svg" alt="Figma 로고" style="width: 200px; height: 200px;">
+<div>
+
+<h2>사용했던 Stack</h2> <br/>
+<h1>React, Nodejs, Figma</h1>
 
 프로젝트명: NFT 게임 감동 프로젝트
 
